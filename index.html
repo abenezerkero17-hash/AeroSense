@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>AeroSense | Smart Weather</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- ========================================
+         HEADER
+    ======================================== -->
+
+    <header class="header">
+
+        <div class="logo">
+
+            <span>🌤️</span>
+
+            <h1>AeroSense</h1>
+
+        </div>
+
+
+        <button
+            class="theme-btn"
+            onclick="toggleTheme()"
+        >
+            🌙
+        </button>
+
+    </header>
+
+
+
+    <!-- ========================================
+         MAIN
+    ======================================== -->
+
+    <main class="container">
+
+
+        <!-- ========================================
+             SEARCH
+        ======================================== -->
+
+        <section class="search-section">
+
+            <input
+                type="text"
+                id="cityInput"
+                placeholder="Search city..."
+                autocomplete="off"
+            >
+
+            <button onclick="searchWeather()">
+                🔍 Search
+            </button>
+
+        </section>
+
+
+
+        <!-- ========================================
+             CURRENT WEATHER
+        ======================================== -->
+
+        <section class="weather-card">
+
+
+            <!-- LOCATION -->
+
+            <div class="location">
+
+                <span>📍</span>
+
+                <span id="cityName">
+                    Addis Ababa
+                </span>
+
+            </div>
+
+
+
+            <!-- MAIN WEATHER -->
+
+            <div class="weather-main">
+
+
+                <!-- WEATHER ICON -->
+
+                <div
+                    class="weather-icon"
+                    id="weatherIcon"
+                >
+                    ☀️
+                </div>
+
+
+
+                <!-- TEMPERATURE -->
+
+                <div class="temperature">
+
+                    <span id="temperature">
+                        24
+                    </span>°C
+
+                </div>
+
+
+
+                <!-- CONDITION -->
+
+                <div
+                    class="condition"
+                    id="condition"
+                >
+                    Clear Sky
+                </div>
+
+
+            </div>
+
+
+
+            <!-- FEELS LIKE -->
+
+            <div class="feels">
+
+                Feels like
+
+                <span id="feelsLike">
+                    25
+                </span>°C
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- ========================================
+             WEATHER DETAILS
+        ======================================== -->
+
+        <section class="details-grid">
+
+
+            <!-- HUMIDITY -->
+
+            <div class="detail-card">
+
+                <span class="detail-icon">
+                    💧
+                </span>
+
+                <h3>
+                    Humidity
+                </h3>
+
+                <p id="humidity">
+                    55%
+                </p>
+
+            </div>
+
+
+
+            <!-- WIND -->
+
+            <div class="detail-card">
+
+                <span class="detail-icon">
+                    💨
+                </span>
+
+                <h3>
+                    Wind
+                </h3>
+
+                <p id="wind">
+                    12 km/h
+                </p>
+
+            </div>
+
+
+
+            <!-- RAIN -->
+
+            <div class="detail-card">
+
+                <span class="detail-icon">
+                    🌧️
+                </span>
+
+                <h3>
+                    Rain
+                </h3>
+
+                <p id="rain">
+                    10%
+                </p>
+
+            </div>
+
+
+
+            <!-- VISIBILITY -->
+
+            <div class="detail-card">
+
+                <span class="detail-icon">
+                    👁️
+                </span>
+
+                <h3>
+                    Visibility
+                </h3>
+
+                <p id="visibility">
+                    10 km
+                </p>
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- ========================================
+             CLOTHING
+        ======================================== -->
+
+        <section class="recommendation-card">
+
+            <h2>
+                👕 What should you wear?
+            </h2>
+
+
+            <div class="clothing">
+
+
+                <div class="clothing-item">
+
+                    👕
+
+                    <span>
+                        Light clothing
+                    </span>
+
+                </div>
+
+
+
+                <div class="clothing-item">
+
+                    🧢
+
+                    <span>
+                        Cap recommended
+                    </span>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ========================================
+             OUTDOOR ACTIVITY
+        ======================================== -->
+
+        <section class="recommendation-card">
+
+            <h2>
+                ⚽ Outdoor Activity
+            </h2>
+
+            <p id="activityAdvice">
+
+                Search for a city to get
+                weather-based activity advice.
+
+            </p>
+
+        </section>
+
+
+
+        <!-- ========================================
+             FOOTER
+        ======================================== -->
+
+        <footer>
+
+            <p>
+                © 2026 AeroSense
+            </p>
+
+            <p>
+                Smart Weather • Smart Decisions
+            </p>
+
+        </footer>
+
+
+    </main>
+
+
+
+    <!-- ========================================
+         JAVASCRIPT
+    ======================================== -->
+
+    <script src="app.js"></script>
+
+
+</body>
+
+</html>
