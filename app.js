@@ -48,7 +48,7 @@ async function searchWeather() {
         ======================================== */
 
         const response = await fetch(
-            `http://127.0.0.1:5000/api/weather?city=${encodeURIComponent(city)}`
+            `https://aerosense-h25f.onrender.com/api/weather?city=${encodeURIComponent(city)}`
         );
 
 
